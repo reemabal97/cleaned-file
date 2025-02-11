@@ -31,6 +31,58 @@ SELECT AVG(rating) AS average_rating FROM ksa;
 ```
 ![image](https://github.com/user-attachments/assets/0824ca4b-fc19-4ab3-b83e-7c7668efe600)
 
+## ✏️ Question 6: What are the top 5 locations based on rating and number of reviews?
+```sql
+SELECT name, rating, review_count 
+FROM ksa 
+ORDER BY rating DESC, review_count DESC 
+LIMIT 5
+```
+![image](https://github.com/user-attachments/assets/1fd5c7df-5fc4-4d0e-8b73-05f3ae5f1657)
+
+## ✏️ Question 7: What are the locations with a rating below 3 and more than 10,000 reviews?
+```sql
+SELECT name, rating, review_count 
+FROM ksa 
+WHERE rating < 3 AND review_count > 10000;
+```
+![image](https://github.com/user-attachments/assets/ace95949-93b9-4308-9882-2ddadcabb39b)
+
+## ✏️ Question 8: How can we display all the information about every location in the dataset?
+```sql
+SELECT * FROM ksa;
+```
+![image](https://github.com/user-attachments/assets/4af522b8-c1d3-4ce8-9f32-dcb28e07c3d3)
+
+## ✏️ Question 9: How can we list all unique genres available in the dataset?
+```sql
+SELECT DISTINCT genre FROM ksa;
+```
+![image](https://github.com/user-attachments/assets/3e73e810-bb2e-4a54-806d-3212d8e50534)
+
+## ✏️ Question 10: How can we find the names of locations in Khobar?
+```sql
+SELECT name FROM ksa WHERE location LIKE '%Khobar%';
+```
+![image](https://github.com/user-attachments/assets/d190ea2b-782a-481a-a6c7-1fb799ce7564)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
