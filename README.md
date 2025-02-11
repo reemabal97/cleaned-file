@@ -25,5 +25,12 @@ SELECT COUNT(*) AS count_rating_zero FROM ksa WHERE rating = 0;
 ```
 ![image](https://github.com/user-attachments/assets/cc587e37-8508-43cd-bec0-44f0cd140e72)
 
+## ✏️ Question 5: Find the average rating across all locations.
+```sql
+SELECT AVG(rating) AS average_rating FROM ksa;
+```
+![image](https://github.com/user-attachments/assets/0824ca4b-fc19-4ab3-b83e-7c7668efe600)
+
+
 
 
